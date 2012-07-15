@@ -34,3 +34,9 @@ cd sem-html5/sampleSite/
 python -m SimpleHTTPServer &
 open http://localhost:8000
 ```
+
+Translation
+===========
+
+An xsl file to convert xml to html is under development.  A simple python script
+to test the xsl is provided.
