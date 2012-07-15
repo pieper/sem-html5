@@ -28,8 +28,9 @@ You can try the sample site by checking out the repository and then running a se
 
 For example on a mac:
 
- git clone git://github.com/pieper/sem-html5
- cd sem-html5/sampleSite/
- python -m SimpleHTTPServer &
- open http://localhost:8000
-
+```bash
+git clone git://github.com/pieper/sem-html5
+cd sem-html5/sampleSite/
+python -m SimpleHTTPServer &
+open http://localhost:8000
+```
