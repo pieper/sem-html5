@@ -1,0 +1,157 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Execution Model Tour</title>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link href="../stylesheets/jquery.mobile-1.1.0.min.css" rel="stylesheet">
+<script src="../js/jquery-1.7.2.min.js"></script><script src="../js/jquery.mobile-1.1.0.min.js"></script>
+</head>
+<body><div data-role="page" data-title="moduleTitle" id="page1"><div data-role="content" style="padding: 15px"><div data-theme="" data-content-theme="">
+<div data-role="collapsible" data-collapsed="false">
+<h3>Scalar Parameters</h3>
+<div data-role="fieldcontain"><fieldset data-role="controlgroup">
+<div>
+<label for="textinput1">integerVariable</label><input id="textinput1" placeholder="" type="number" value="30">
+</div>
+      doubleVariable
+      -d
+      --double
+      A double with constraints
+      Double Parameter
+      30
+      
+        0
+        1.e3
+        10
+      
+    </fieldset></div>
+</div>
+<div data-role="collapsible" data-collapsed="false">
+<h3>Vector Parameters</h3>
+<div data-role="fieldcontain"><fieldset data-role="controlgroup">
+      floatVector
+      f
+      A vector of floats
+      Float Vector Parameter
+      1.3,2,-14
+    
+      stringVector
+      string_vector
+      A vector of strings
+      String Vector Parameter
+      foo,bar,foobar
+    </fieldset></div>
+</div>
+<div data-role="collapsible" data-collapsed="false">
+<h3>Enumeration Parameters</h3>
+<div data-role="fieldcontain"><fieldset data-role="controlgroup">
+      stringChoice
+      e
+      enumeration
+      An enumeration of strings
+      String Enumeration Parameter
+      Bill
+      Ron
+      Eric
+      Bill
+      Ross
+      Steve
+      Will
+    </fieldset></div>
+</div>
+<div data-role="collapsible" data-collapsed="false">
+<h3>Boolean Parameters</h3>
+<div data-role="fieldcontain"><fieldset data-role="controlgroup">
+      boolean1
+      boolean1
+      A boolean default true
+      Boolean Default true
+      true
+    
+      boolean2
+      boolean2
+      A boolean default false
+      Boolean Default false
+      false
+    
+      boolean3
+      boolean3
+      A boolean with no default, should be defaulting to false
+      Boolean No Default
+    </fieldset></div>
+</div>
+<div data-role="collapsible" data-collapsed="false">
+<h3>File, Directory and Image Parameters</h3>
+<div data-role="fieldcontain"><fieldset data-role="controlgroup">
+      file1
+      An input file
+      Input file
+      input
+    
+      files
+      Multiple input files
+      Input Files
+      input
+    
+      directory1
+      An input directory. If no default is specified, the current directory is used,
+      Input directory
+      input
+    
+      image1
+      An input image
+      Input image
+      input
+    
+      image2
+      An output image
+      Output image
+      output
+    
+      transform1
+      An input transform
+      Input transform
+      input
+    
+      transform2
+      An output transform
+      Output transform
+      output
+    
+      seed
+      Seeds
+      --seed
+      Lists of points in the CLI correspond to slicer fiducial lists
+      0,0,0
+    </fieldset></div>
+</div>
+<div data-role="collapsible" data-collapsed="false">
+<h3>Index Parameters</h3>
+<div data-role="fieldcontain"><fieldset data-role="controlgroup">
+      arg0
+      input
+      0
+      First index argument is an image
+      First index argument
+    
+      arg1
+      output
+      1
+      Second index argument is an image
+      Second index argument
+    </fieldset></div>
+</div>
+<div data-role="collapsible" data-collapsed="false">
+<h3>Regions of interest</h3>
+<div data-role="fieldcontain"><fieldset data-role="controlgroup"></fieldset></div>
+</div>
+<div data-role="collapsible" data-collapsed="false">
+<h3>Measurements</h3>
+<div data-role="fieldcontain"><fieldset data-role="controlgroup"></fieldset></div>
+</div>
+<div data-role="collapsible" data-collapsed="false">
+<h3>Simple return types</h3>
+<div data-role="fieldcontain"><fieldset data-role="controlgroup"></fieldset></div>
+</div>
+</div></div></div></body>
+</html>
