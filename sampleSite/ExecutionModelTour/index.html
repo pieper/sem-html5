@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Slicer Remote</title>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href='../stylesheets/jquery.mobile-1.1.0.min.css' rel='stylesheet'>
+    <script src='../js/jquery-1.7.2.min.js'></script>
+    <script src='../js/jquery.mobile-1.1.0.min.js'></script>
+  </head>
+  <body>
+        <div data-role='page' data-title='Execution Model Tour' id='page1'>
+            <div data-role="content" style="padding: 15px">
+                <div data-theme="" data-content-theme="">
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            Help &amp; Acknowledgement
+                        </h3>
+                        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                            <li data-theme="c">
+                                <a href="#page1" data-transition="slide">
+                                    Help
+                                </a>
+                            </li>
+                            <li data-theme="c">
+                                <a href="#page1" data-transition="slide">
+                                    Acknowledgements
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Execution Model Tour
+                        </h3>
+                        <div data-role="fieldcontain">
+                            <label for="selectmenu1">
+                                Parameter Set
+                            </label>
+                            <select name="selectmenu1" id="selectmenu1">
+                                <option value="">
+                                    Execution Model Tour
+                                </option>
+                                <option value="newParameterNode">
+                                    Create New Parameter Node
+                                </option>
+                                <option value="deleteParameterNode">
+                                    Delete current Parameter Node
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Scalar Parameters
+                        </h3>
+                        <div data-role="fieldcontain">
+                            <fieldset data-role="controlgroup">
+                                <label for="textinput1">
+                                    Integer Parameter
+                                </label>
+                                <input id="textinput1" placeholder="" value="30" type="number" />
+                            </fieldset>
+                        </div>
+                        <div data-role="fieldcontain">
+                            <fieldset data-role="controlgroup">
+                                <label for="slider1">
+                                    Double Parameter
+                                </label>
+                                <input type="range" name="slider" id="slider1" value="30" min="0" max="1000" data-highlight="false" />
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Vector Parameters
+                        </h3>
+                        <div data-role="fieldcontain">
+                            <fieldset data-role="controlgroup">
+                                <label for="textinput2">
+                                    Float Vector Parameter
+                                </label>
+                                <input id="textinput2" placeholder="" value="1.3,2,-14" type="" />
+                            </fieldset>
+                        </div>
+                        <div data-role="fieldcontain">
+                            <fieldset data-role="controlgroup">
+                                <label for="textinput3">
+                                    String Vector Parameter
+                                </label>
+                                <input id="textinput3" placeholder="" value="foo,bar,foobar" type="" />
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Enumeration Parameters
+                        </h3>
+                        <div data-role="fieldcontain">
+                          <fieldset data-role="controlgroup" data-type="horizontal">
+                            <legend>String Enumeration Parameters:</legend>
+                                <input type="radio" name="radio-choice-1" id="radio-choice-11" value="choice-1" />
+                                <label for="radio-choice-11">Ron</label>
+
+                                <input type="radio" name="radio-choice-1" id="radio-choice-12" value="choice-2"  />
+                                <label for="radio-choice-12">Eric</label>
+
+                                <input type="radio" name="radio-choice-1" id="radio-choice-13" value="choice-3"  checked="checked"/>
+                                <label for="radio-choice-13">Bill</label>
+
+                                <input type="radio" name="radio-choice-1" id="radio-choice-14" value="choice-4"  />
+                                <label for="radio-choice-14">Ross</label>
+
+                                <input type="radio" name="radio-choice-1" id="radio-choice-15" value="choice-5"  />
+                                <label for="radio-choice-15">Steve</label>
+
+                                <input type="radio" name="radio-choice-1" id="radio-choice-16" value="choice-6"  />
+                                <label for="radio-choice-16">Will</label>
+                          </fieldset>
+                      </div>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Boolean Parameters
+                        </h3>
+                        <div data-role="fieldcontain">
+                          <fieldset data-role="controlgroup">
+                                <input type="checkbox" name="checkbox-choice-1" id="checkbox-choice-11" checked="checked"/>
+                                <label for="checkbox-choice-11">Boolean Default true</label>
+
+                                <input type="checkbox" name="checkbox-choice-1" id="checkbox-choice-12" />
+                                <label for="checkbox-choice-12">Boolean Default false</label>
+
+                                <input type="checkbox" name="checkbox-choice-1" id="checkbox-choice-13" />
+                                <label for="checkbox-choice-13">Boolean No Default</label>
+                          </fieldset>
+                      </div>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            File, Directory, and Image Parameters
+                        </h3>
+                        <div data-role="fieldcontain">
+                          <fieldset data-role="controlgroup">
+                                <label for="file-choice-11">Input file</label>
+                                <input type="file" name="file-choice-1" id="file-choice-11"/>
+
+                                <label for="file-choice-12">Input files</label>
+                                <input type="file" name="file-choice-2" id="file-choice-12"/>
+                                
+                                <p>Input directory not supported</p>
+                                <p>Input image not supported</p>
+                                <p>Output image not supported</p>
+                                <p>Input transform not supported</p>
+                                <p>Output transform not supported</p>
+                                <p>Seeds not supported</p>
+
+                          </fieldset>
+                      </div>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Index Parameters
+                        </h3>
+                        <label for="select-choice-0" class="select">First index argument</label>
+                        <select name="select-choice-0" id="select-choice-0">
+                           <option value="volume1">Volume One</option>
+                           <option value="volume2">Volume Two</option>
+                        </select>
+                        <label for="select-choice-1" class="select">Second index argument</label>
+                        <select name="select-choice-0" id="select-choice-0">
+                           <option value="volume1">Volume One</option>
+                           <option value="volume2">Volume Two</option>
+                        </select>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Regions of Interest
+                        </h3>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Measurements
+                        </h3>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Simple Return Types
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id='log'></div>
+    <script>
+        //App custom javascript
+    </script>
+  </body>
+</html>
