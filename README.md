@@ -20,3 +20,17 @@ The current plan is to use jquery mobile as the interface tool on the html side,
 tools may be swapped out in the future.
 
 http://jquerymobile.com/
+
+Testing
+=======
+
+You can try the sample site by checking out the repository and then running a server.
+
+For example on a mac:
+
+```bash
+git clone git://github.com/pieper/sem-html5
+cd sem-html5/sampleSite/
+python -m SimpleHTTPServer &
+open http://localhost:8000
+```
