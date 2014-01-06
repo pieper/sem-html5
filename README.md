@@ -40,3 +40,8 @@ Translation
 
 An xsl file to convert xml to html is under development.  A simple python script
 to test the xsl is provided.
+
+Example (manually translated)
+=============================
+
+![Execution Model Tour](https://raw.github.com/pieper/sem-html5/master/images/Tour.png)
